@@ -1,4 +1,5 @@
 'use strict'
+cd ..
 
 /*
  * Create a `isPositive` function that takes a number as

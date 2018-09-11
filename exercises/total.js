@@ -6,7 +6,13 @@
  *
  */
 
-
+function total(x){
+	let count = 0;
+	for (let i = 0; i < x.length; i++){
+		count += x[i];
+	}
+	return count;
+}
 //* Begin of tests
 const assert = require('assert')
 

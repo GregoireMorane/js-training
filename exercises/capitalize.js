@@ -8,6 +8,11 @@
  */
 
 
+let string = string.toLowerCase();
+function capitalize(string){
+	return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 //* Begin of tests
 const assert = require('assert')
 
