@@ -1,3 +1,4 @@
+
 'use strict'
 
 /*
@@ -10,6 +11,21 @@
  */
 
 // Your code :
+
+function multiply(x, y){
+	if(x === 0 || y === 0)
+		return 0;
+	if(x < 0){
+		x =- x;
+		y =- y;
+	}
+	let result = 0;
+	if(x > 0){
+		x--;
+		result = y;
+		return result + multiply(x, y);
+	}
+}
 
 //* Begin of tests
 const assert = require('assert')

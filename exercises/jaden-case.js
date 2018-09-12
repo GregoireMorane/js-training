@@ -10,10 +10,18 @@
  *
  */
 
-
+function jadenCase(str){
+	return str.toLowerCase()
+	.split(' ').map((str) => str.charAt(0).toUpperCase() + str.substring(1))
+	.join(' ');
+}
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(jadenCase('str'), 'Str')
+assert.strictEqual(jadenCase('qsdqsdqsd'), 'Qsdqsdqsd')
+assert.strictEqual(jadenCase('STR'), 'Str')
+assert.strictEqual(jadenCase('zapZap'), 'Zapzap')
+assert.strictEqual(jadenCase('HeLLO wORLD foo bar'), 'Hello World Foo Bar')
 // End of tests */
