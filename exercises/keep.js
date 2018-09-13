@@ -12,9 +12,28 @@
  *
  */
 
+function keepFirst(x){
+	return x.slice(0, 2);
+}
+
+function keepLast(x){
+	return x.slice(-2);
+}
+
+function keepFirstLast(x){
+	let a = x.slice(0, 2);
+	let b = x.slice(-2);
+	return a + b;
+}
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(typeof keepFirst, "function")
+assert.strictEqual(typeof keepLast, "function")
+assert.strictEqual(typeof keepFirstLast, "function")
+assert.strictEqual(keepFirst('bonjour'), 'bo')
+assert.strictEqual(keepLast('bonjour'), 'ur')
+assert.strictEqual(keepFirstLast('bonjour'), 'bour')
+
 // End of tests */

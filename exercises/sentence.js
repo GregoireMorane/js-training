@@ -6,6 +6,9 @@
  *
  */
 
+function sentence(x){
+	return x.join(" ");
+}
 
 //* Begin of tests
 const assert = require('assert')

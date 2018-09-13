@@ -7,10 +7,9 @@
  *
  */
 
-
-let string = string.toLowerCase();
-function capitalize(string){
-	return string.charAt(0).toUpperCase() + string.slice(1);
+function capitalize(x){
+	let str = x.toLowerCase();
+	return x.charAt(0).toUpperCase() + str.slice(1);
 }
 
 //* Begin of tests
